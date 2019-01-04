@@ -1,0 +1,1 @@
+"# test_codeigniter"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/dimasnugroho673/test_codeigniter.gitgit push -u origin master
