@@ -18,10 +18,17 @@
     <!-- CSS pribadi -->
     <link rel="stylesheet" href="/ds_resort/assets/css/style.css">
 
-    <script src="/ds_resort/assets/js/script.js"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUlXTI26UPn_mzsPbf0xs3Rli9XGNmo5M&callback=initMap"
     async defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- js pribadi -->
+    <script src="/ds_resort/assets/js/script.js"></script>
 
 </head>
 <body>
@@ -78,6 +85,7 @@
             </a>
         </div>
 
+
     </section>
 
     <section class="content">
@@ -85,7 +93,8 @@
         <?php echo $this->session->flashdata('report'); ?>
         <div class="row">
 			<div class="col-sm-12">
-				<h2 class="text-center"> <b>Bergabung Bersama Kami di DS Resort Bintan</b> </h2>
+                <h2 class="text-center"> <b>Bergabung Bersama Kami di DS Resort Bintan</b> </h2>
+                <hr>
 			</div>
 		</div>
         
@@ -101,9 +110,10 @@
         <br>
 
         <h2 align="center">Daftar Sekarang Untuk Bekerja di DS Resort Bintan</h2>
+        <hr>
+        <br>
+        <br>
 
-        <br>
-        <br>
         <?php echo form_open('dashboard/post_insert'); ?>    
             <form action="#" method="post" >
 
@@ -136,7 +146,7 @@
                     </div>
                     <div class="form-group ">
                         <label >Universitas/Instansi</label>
-                        <input type="text" name="kampus" class="form-control" placeholder="Universitas/Perusahaan . . . " required=""> 
+                        <input type="text" name="instansi" class="form-control" placeholder="Universitas/Perusahaan . . . " required=""> 
                     </div>
                     <div class="form-group ">
                         <label >Email</label>
@@ -144,7 +154,7 @@
                     </div>
                     <div class="form-group ">
                         <label >No Telepon</label>
-                        <input type="text" name="tlp" class="form-control" placeholder="+628 . . . " required=""> 
+                        <input type="text" name="no_telp" class="form-control" placeholder="+628 . . . " required=""> 
                     </div>
                         <button class="btn btn-primary col-md-12" type="submit">Daftar Sekarang</button>
                     </form>

@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-.carousel {
+.carousel-item {
     height: 600px;
     background-size: cover;
     overflow: hidden;
@@ -12,6 +12,15 @@
 .navbar-brand img {
     height: 50px;
     width: 50px;
+}
+
+.navbar a {
+    margin-right: 30px;
+}
+
+hr {
+    width: 850px;
+    border: 2px solid grey;
 }
 
 .maps {
@@ -30,8 +39,8 @@
 }
 
 
-.form {
-
+.content .table {
+    text-align: center;
 }
 
 .content {

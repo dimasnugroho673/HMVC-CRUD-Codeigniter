@@ -14,14 +14,13 @@ class Dashboard extends MX_Controller {
 	}
 	public function post_insert(){
 		$dataInsert = array(
-			'nama_pendaftar' 	=> $this->input->post("nama"),
+			'nama' 	=> $this->input->post("nama"),
 			'no_identitas' => $this->input->post("identitas"),
-			'status' 	=> $this->input->post("status"),
+			'pekerjaan' => $this->input->post("status"),
 			'jurusan' 	=> $this->input->post("jurusan"),
-			'instansi' 	=> $this->input->post("kampus"),
+			'instansi' 	=> $this->input->post("instansi"),
 			'email' 	=> $this->input->post("email"),
-			'no_hp' 	=> $this->input->post("tlp"),
-			'date_created' 	=> date("Y-m-d H:i:s")
+			'no_telp' 	=> $this->input->post("no_telp"),
 		);
 
 		if ($this->M_dashboard->insert($dataInsert)){ 

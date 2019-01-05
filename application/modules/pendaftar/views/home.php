@@ -50,29 +50,29 @@
       
       <div class="container">
         <div class="col-md-12">
-        <h2>Daftar Karyawan Yang Telah Bergabung Dengan Kami</h2>
-        <br>
-          <table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">No</th>
-      <th scope="col">Nama</th>
-      <th scope="col">Instansi</th>
-      <th scope="col">Jurusan/Posisi</th>
-    </tr>
-  </thead>
-  <?php foreach ($pendaftar ->result() as $p){ ?>
-                                <tr>
-                                    <td><?php echo $p->id_pendaftaran; ?></td> 
-                                    <td><?php echo $p->nama; ?></td>
-                                    <td><?php echo $p->instansi; ?></td>
-                                    <td><?php echo $p->jurusan; ?></td>
+            <h2><center>Daftar Karyawan Yang Telah Bergabung Dengan Kami</center></h2>
+            <hr>
+            <br>
 
-							<?php }?>
-</table>
-
-            
-            
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Instansi</th>
+                        <th scope="col">Jurusan/Posisi</th>
+                    </tr>
+                </thead>
+                    <?php foreach ($pendaftar ->result() as $p){ ?>
+                        <tr>
+                            <td><?php echo $p->id_pendaftaran; ?></td> 
+                            <td><?php echo $p->nama; ?></td>
+                            <td><?php echo $p->instansi; ?></td>
+                            <td><?php echo $p->jurusan; ?></td>
+                        </tr>
+                        <?php }?>
+            </table>
+       
         </div>   
       </div>
 
@@ -82,21 +82,21 @@
 
     <section class="footer">
 
-<div class="container text-center">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>&copy; copyright 2019 | build by. <a href="http://instagram.com/dimasnugroho_putro" target="_blank">Dimas Nugroho Putro</a>.</p>
-        </div>
-    </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>&copy; copyright 2019 | build by. <a href="http://instagram.com/dimasnugroho_putro" target="_blank">Dimas Nugroho Putro</a>.</p>
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col-sm-12">
-            <a href="https://twitter.com/DimasNugroho673" class="btn btn-primary" target="_blank"><i class="glyphicon glyphicon-phone" ></i> Follow on Twitter</a>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="https://twitter.com/DimasNugroho673" class="btn btn-primary" target="_blank"><i class="glyphicon glyphicon-phone" ></i> Follow on Twitter</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-</section>
+    </section>
 
 
 </body>
